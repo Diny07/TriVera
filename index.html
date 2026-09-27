@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TriVera — Digital Solution, IT Consultant & Creative</title>
+<meta name="description" content="TriVera menyediakan solusi digital, pengembangan website, desain kreatif, konsultasi IT, dan layanan teknologi sesuai kebutuhan individu, bisnis, maupun organisasi.">
+
+<link rel="icon" href="logo-trivera.jpeg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <img src="logo-trivera.jpeg" alt="Logo TriVera" class="brand-mark">
+      <span class="brand-text">
+        <span class="brand-name">TriVera</span>
+        <span class="brand-tagline">IT Consultant &amp; Web House</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#layanan">Layanan</a>
+      <a href="#proses">Proses</a>
+      <a href="#portofolio">Portofolio</a>
+      <a href="#harga">Harga</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#kontak" class="btn btn-ghost">Konsultasi</a>
+      <a href="https://wa.me/6282114982094?text=Halo%20TriVera%2C%20saya%20ingin%20bertanya%20tentang%20layanan." target="_blank" rel="noopener" class="btn btn-gold">
+        <svg viewBox="0 0 24 24" class="ico"><path d="M17.6 6.3A8.9 8.9 0 0 0 12 4a8.9 8.9 0 0 0-7.7 13.4L3 21l3.7-1.2A8.9 8.9 0 0 0 12 21a8.9 8.9 0 0 0 5.6-15.7Zm-5.6 13.1a7.4 7.4 0 0 1-3.8-1l-.3-.2-2.3.8.8-2.2-.2-.3A7.4 7.4 0 1 1 20 12a7.4 7.4 0 0 1-8 7.4Zm4-5.5c-.2-.1-1.3-.6-1.5-.7-.2-.1-.3-.1-.5.1-.1.2-.5.7-.6.8-.1.1-.2.1-.4 0-.2-.1-.9-.3-1.7-1a6.3 6.3 0 0 1-1.2-1.5c-.1-.2 0-.3.1-.4l.3-.4.2-.3v-.3c0-.1-.5-1.2-.7-1.6-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.1 1.6 2.5 3.9 3.5.5.2 1 .4 1.3.5.6.2 1.1.1 1.5.1.5-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1l-.4-.2Z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <canvas id="particleCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow">IT Consultant · Web House · Creative</p>
+        <h1 class="hero-title">
+          Solusi Digital yang <span class="text-gold">Rapi</span>,
+          <span class="text-gold">Fleksibel</span>, dan <span class="text-gold">Sesuai Kebutuhan</span>.
+        </h1>
+        <p class="hero-desc">
+          TriVera membantu individu, mahasiswa, pelaku usaha, organisasi,
+          dan profesional dalam kebutuhan website, teknologi, desain,
+          serta konsultasi IT melalui solusi yang disesuaikan dengan
+          kebutuhan setiap project.
+        </p>
+        <div class="hero-cta">
+          <a href="https://wa.me/6282114982094?text=Halo%20TriVera%2C%20saya%20ingin%20konsultasi%20project." target="_blank" rel="noopener" class="btn btn-gold btn-lg">
+            Konsultasi Gratis via WhatsApp
+          </a>
+          <a href="#layanan" class="btn btn-outline btn-lg">Lihat Layanan</a>
+        </div>
+
+        <div class="hero-stats" id="heroStats">
+    <div class="stat">
+        <span class="stat-label">Solusi Fleksibel</span>
+    </div>
+
+    <div class="stat">
+        <span class="stat-label">Konsultasi Langsung</span>
+    </div>
+
+    <div class="stat">
+        <span class="stat-label">Sesuai Kebutuhan</span>
+    </div>
+</div>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <div class="monogram-frame">
+          <svg class="monogram" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="goldLine" x1="0" y1="0" x2="260" y2="260" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#F0CF8B"/>
+                <stop offset="50%" stop-color="#D4AF6A"/>
+                <stop offset="100%" stop-color="#8C6B3F"/>
+              </linearGradient>
+            </defs>
+            <path class="mono-path" d="M55 70 H130 M92 70 V115 M92 145 V225" stroke="url(#goldLine)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="mono-path mono-path-delay" d="M120 70 L165 225 L210 70" stroke="url(#goldLine)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="orbit-dot dot-1"></div>
+          <div class="orbit-dot dot-2"></div>
+          <div class="orbit-dot dot-3"></div>
+        </div>
+        <div class="floating-card card-code" style="--delay:0s">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <p>&lt;/&gt; deploy: success</p>
+        </div>
+        <div class="floating-card card-badge" style="--delay:.6s">✓ Revisi Fleksibel</div>
+      </div>
+    </div>
+
+    <a href="#layanan" class="scroll-cue" aria-label="Gulir ke bawah"><span></span></a>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="trust-strip" data-reveal>
+    <div class="container trust-inner">
+      <p>Solusi digital untuk berbagai kebutuhan individu, bisnis, organisasi, &amp; akademik</p>
+      <div class="trust-tags">
+        <span>Web Development</span><span>•</span>
+        <span>Tugas &amp; Skripsi</span><span>•</span>
+        <span>Creative Design</span><span>•</span>
+        <span>Digital Solution</span><span>•</span>
+        <span>IT Training</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LAYANAN ============ -->
+  <section class="section" id="layanan">
+    <div class="container">
+      <p class="section-eyebrow" data-reveal>Layanan Kami</p>
+      <h2 class="section-title" data-reveal>Solusi yang Disesuaikan dengan Kebutuhanmu</h2>
+      <p class="section-desc" data-reveal>
+        TriVera menyediakan berbagai layanan digital, teknologi, desain, dan edukasi yang dapat disesuaikan dengan kebutuhan setiap individu, bisnis, organisasi, maupun project.
+      </p>
+
+      <div class="service-featured" data-reveal>
+        <div class="service-featured-copy">
+          <span class="badge-flagship">Layanan Unggulan</span>
+          <h3>Website Development</h3>
+          <p>
+            Website untuk kebutuhan bisnis, organisasi, personal, portfolio, maupun project akademik dirancang sesuai kebutuhan dengan tampilan modern, responsif, dan siap digunakan.
+          </p>
+          <ul class="feature-list">
+            <li>Desain disesuaikan dengan kebutuhan</li>
+            <li>Struktur kode rapi &amp; mudah dikembangkan</li>
+            <li>Responsif untuk berbagai perangkat</li>
+            <li>Konsultasi &amp; pendampingan selama project</li>
+          </ul>
+          <a href="https://wa.me/6282114982094?text=Halo%20TriVera%2C%20saya%20mau%20konsultasi%20joki%20website." target="_blank" rel="noopener" class="btn btn-gold">Konsultasi Website</a>
+        </div>
+        <div class="service-featured-visual">
+          <div class="browser-mock">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <div class="browser-body">
+              <div class="bar bar-1"></div>
+              <div class="bar bar-2"></div>
+              <div class="bar bar-3"></div>
+              <div class="chip"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-grid">
+        <div class="service-card" data-reveal>
+          <div class="service-icon"><i data-lucide="notebook-pen"></i></div>
+          <h4>Joki Tugas Harian</h4>
+          <p>Tugas kuliah harian, laporan praktikum, hingga makalah dikerjakan sesuai kaidah &amp; tenggat waktu.</p>
+        </div>
+        <div class="service-card" data-reveal>
+          <div class="service-icon"><i data-lucide="graduation-cap"></i></div>
+          <h4>Joki Skripsi &amp; Karya Ilmiah</h4>
+          <p>Pendampingan penyusunan skripsi, revisi bab, hingga olah data dari perencanaan sampai sidang.</p>
+        </div>
+        <div class="service-card" data-reveal>
+          <div class="service-icon"><i data-lucide="pen-tool"></i></div>
+          <h4>Creative Design</h4>
+          <p>Desain grafis untuk kebutuhan promosi, PPT, branding, presentasi, &amp; kebutuhan visual lainnya.</p>
+        </div>
+        <div class="service-card" data-reveal>
+          <div class="service-icon"><i data-lucide="laptop-minimal-check"></i></div>
+          <h4>Konsultasi &amp; Kelas IT</h4>
+          <p>Konsultasi teknologi, pemrograman, &amp; pembelajaran IT untuk individu maupun kelompok.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROSES KERJA ============ -->
+  <section class="section section-dark" id="proses">
+    <div class="container">
+      <p class="section-eyebrow" data-reveal>Alur Kerja</p>
+      <h2 class="section-title" data-reveal>Bagaimana Kami Bekerja</h2>
+      <p class="section-desc" data-reveal>Proses kerja TriVera dilakukan secara langsung &amp; fleksibel melalui komunikasi bersama hingga project selesai.</p>
+
+      <div class="process-line" data-reveal>
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <h4>Konsultasi</h4>
+          <p>Sampaikan kebutuhan, tujuan, dan gambaran project melalui WhatsApp.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <h4>Diskusi &amp; Penawaran</h4>
+          <p>Kami berdiskusi mengenai kebutuhan, ruang lingkup pekerjaan, estimasi waktu, dan biaya.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <h4>Kesepakatan</h4>
+          <p>Setelah detail project disepakati, proses pengerjaan dapat dimulai sesuai kesepakatan bersama.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">04</span>
+          <h4>Pengerjaan &amp; Revisi</h4>
+          <p>Project dikerjakan sesuai kesepakatan dan komunikasi dilakukan secara langsung selama proses berlangsung.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">05</span>
+          <h4>Penyelesaian</h4>
+          <p>Setelah project selesai dan disetujui, hasil akhir diserahkan sesuai kesepakatan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTOFOLIO ============ -->
+  <section class="section" id="portofolio">
+    <div class="container">
+      <p class="section-eyebrow" data-reveal>Contoh &amp; Eksplorasi</p>
+
+<h2 class="section-title" data-reveal>
+  Contoh solusi yang dapat dikembangkan bersama TriVera
+</h2>
+
+<p class="section-desc" data-reveal>
+  Beberapa contoh konsep dan jenis solusi yang menggambarkan kemampuan
+  serta ruang lingkup yang dapat dikembangkan sesuai kebutuhan.
+</p>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card" data-reveal onclick="window.open('https://coffe-shop-teal.vercel.app')">
+          <div class="portfolio-thumb thumb-1"></div>
+          <div class="portfolio-info">
+            <span class="tag">Website Bisnis</span>
+            <h4>Landing Page Coffee Shop</h4>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-reveal>
+          <div class="portfolio-thumb thumb-2"></div>
+          <div class="portfolio-info">
+            <span class="tag">Sistem Informasi</span>
+            <h4>Dashboard Inventaris UMKM</h4>
+          </div>
+        </article>
+        <article class="portfolio-card" data-reveal>
+          <div class="portfolio-thumb thumb-3"></div>
+          <div class="portfolio-info">
+            <span class="tag">Tugas Akhir</span>
+            <h4>Website Skripsi Sistem Akademik</h4>
+          </div>
+        </article>
+        <article class="portfolio-card" data-reveal>
+          <div class="portfolio-thumb thumb-4"></div>
+          <div class="portfolio-info">
+            <span class="tag">Desain Grafis</span>
+            <h4>Set Feed &amp; Spanduk Promosi</h4>
+          </div>
+        </article>
+        <article class="portfolio-card" data-reveal>
+          <div class="portfolio-thumb thumb-5"></div>
+          <div class="portfolio-info">
+            <span class="tag">Toko Online</span>
+            <h4>Katalog &amp; Landing Page Produk</h4>
+          </div>
+        </article>
+        <article class="portfolio-card" data-reveal>
+          <div class="portfolio-thumb thumb-6"></div>
+          <div class="portfolio-info">
+            <span class="tag">Company Profile</span>
+            <h4>Website Profil Konsultan</h4>
+          </div>
+        </article>
+      </div>
+      <p class="portfolio-note" data-reveal>
+  *Contoh di atas merupakan ilustrasi konsep dan ruang lingkup solusi yang dapat dikembangkan bersama TriVera.
+</p>
+    </div>
+  </section>
+
+  <!-- ============ HARGA ============ -->
+  <section class="section section-dark" id="harga">
+    <div class="container">
+      <p class="section-eyebrow" data-reveal>Estimasi Harga</p>
+      <h2 class="section-title" data-reveal>Harga dapat disesuaikan berdasarkan kebutuhan, fitur, tingkat kompleksitas, dan ruang lingkup project.</h2>
+      <p class="section-desc" data-reveal>Harga bersifat estimasi awal penyesuaian akhir dibahas saat konsultasi.</p>
+
+      <div class="pricing-grid">
+        <div class="price-card" data-reveal>
+          <h3>Basic</h3>
+          <p class="price-desc">Cocok untuk landing page sederhana &amp; tugas ringan</p>
+          <p class="price-tag">Mulai <span>Rp 50K</span></p>
+          <ul>
+            <li>1–3 halaman website</li>
+            <li>Desain responsif standar</li>
+            <li>1x revisi minor</li>
+            <li>Estimasi 2–4 hari kerja</li>
+          </ul>
+          <a href="https://wa.me/6282114982094?text=Halo%20TriVera%2C%20saya%20tertarik%20paket%20Basic." target="_blank" rel="noopener" class="btn btn-outline">Pilih Basic</a>
+        </div>
+
+        <div class="price-card price-highlight" data-reveal>
+          <span class="badge-popular">Paling Diminati</span>
+          <h3>Professional</h3>
+          <p class="price-desc">Untuk website bisnis, sistem sederhana, atau skripsi lengkap</p>
+          <p class="price-tag">Mulai <span>Rp 85K</span></p>
+          <ul>
+            <li>Hingga 8 halaman / fitur custom</li>
+            <li>Desain unik sesuai brand</li>
+            <li>3x revisi</li>
+            <li>Pendampingan &amp; dokumentasi</li>
+            <li>Estimasi 5–10 hari kerja</li>
+          </ul>
+          <a href="https://wa.me/6282114982094?text=Halo%20TriVera%2C%20saya%20tertarik%20paket%20Professional." target="_blank" rel="noopener" class="btn btn-gold">Pilih Professional</a>
+        </div>
+
+        <div class="price-card" data-reveal>
+          <h3>Custom</h3>
+          <p class="price-desc">Konsultasikan kebutuhan</p>
+          <p class="price-tag">Mulai <span>Rp ...</span></p>
+          <ul>
+            <li>Fitur &amp; halaman tanpa batas wajar</li>
+            <li>Integrasi database &amp; admin panel</li>
+            <li>Revisi fleksibel</li>
+            <li>Support pasca serah terima</li>
+          </ul>
+          <a href="https://wa.me/6282114982094?text=Halo%20TriVera%2C%20saya%20tertarik%20paket%20Premium." target="_blank" rel="noopener" class="btn btn-outline">Pilih Premium</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONI ============ -->
+  <!-- ============ TESTIMONI ============ -->
+<section class="section" id="testimoni">
+  <div class="container">
+    <p class="section-eyebrow" data-reveal>Mengapa TriVera?</p>
+
+    <h2 class="section-title" data-reveal>
+      Solusi yang disesuaikan dengan kebutuhanmu
+    </h2>
+
+    <p class="section-desc" data-reveal>
+      Kami mengutamakan kebutuhan, komunikasi, dan solusi yang sesuai
+      dengan setiap kebutuhan yang kamu sampaikan.
+    </p>
+
+    <div class="testi-slider" data-reveal>
+      <div class="testi-track" id="testiTrack">
+
+        <div class="testi-card">
+          <p>
+            Solusi yang fleksibel dan dapat disesuaikan dengan kebutuhan
+            serta ruang lingkup pekerjaan.
+          </p>
+          <footer>
+            <div class="avatar">✓</div>
+            <div>
+              <strong>Fleksibel</strong>
+              <small>Sesuai kebutuhan</small>
+            </div>
+          </footer>
+        </div>
+
+        <div class="testi-card">
+          <p>
+            Diskusi dan konsultasi dilakukan secara langsung sehingga
+            kebutuhan dapat dibicarakan dengan lebih mudah dan jelas.
+          </p>
+          <footer>
+            <div class="avatar">✓</div>
+            <div>
+              <strong>Komunikasi Langsung</strong>
+              <small>Diskusi melalui WhatsApp</small>
+            </div>
+          </footer>
+        </div>
+
+        <div class="testi-card">
+          <p>
+            Kebutuhan, ruang lingkup, estimasi waktu, dan biaya dibahas
+            terlebih dahulu sebelum pekerjaan dimulai.
+          </p>
+          <footer>
+            <div class="avatar">✓</div>
+            <div>
+              <strong>Transparan</strong>
+              <small>Jelas sejak awal</small>
+            </div>
+          </footer>
+        </div>
+
+        <div class="testi-card">
+          <p>
+            Kami membantu menemukan pendekatan yang sesuai dengan
+            kebutuhan, bukan sekadar menawarkan layanan.
+          </p>
+          <footer>
+            <div class="avatar">✓</div>
+            <div>
+              <strong>Berorientasi Solusi</strong>
+              <small>Fokus pada kebutuhan</small>
+            </div>
+          </footer>
+        </div>
+
+      </div>
+
+      <div class="testi-controls">
+        <button type="button" id="testiPrev" aria-label="Sebelumnya">←</button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button type="button" id="testiNext" aria-label="Berikutnya">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section-dark" id="faq">
+    <div class="container container-narrow">
+      <p class="section-eyebrow" data-reveal>FAQ</p>
+      <h2 class="section-title" data-reveal>Pertanyaan yang sering ditanyakan</h2>
+
+      <div class="faq-list" data-reveal>
+        <div class="faq-item">
+          <button class="faq-question">
+            Apakah source code website diserahkan sepenuhnya ke klien?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>Ya. Setelah project selesai dan lunas, seluruh source code diserahkan ke kamu disesuaikan dengan kesepakatan project</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Bagaimana sistem pembayarannya?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>Sistem pembayaran dibahas dan disepakati bersama sebelum project dimulai. Skema pembayaran dapat disesuaikan dengan jenis dan ruang lingkup project.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Bagaimana sistem revisinya?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>Jumlah dan ketentuan revisi disesuaikan dengan jenis project dan kesepakatan bersama sebelum pengerjaan dimulai.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Apakah data dan project saya dijaga kerahasiaannya?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>Tentu. Semua data dan detail project bersifat rahasia dan hanya digunakan untuk keperluan pengerjaan.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Apakah bisa konsultasi dulu sebelum deal harga?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>Bisa banget. Konsultasi awal via WhatsApp atau form kontak sepenuhnya gratis dan tanpa komitmen.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="cta-banner" data-reveal>
+    <div class="container cta-banner-inner">
+      <h2>Punya kebutuhan digital? Mari diskusikan bersama TriVera.</h2>
+      <p>Ceritakan kebutuhanmu melalui WhatsApp. Kami akan membantu memahami kebutuhan dan mencari solusi yang paling sesuai.</p>
+      <a href="https://wa.me/6282114982094?text=Halo%20TriVera%2C%20saya%20siap%20mulai%20project." target="_blank" rel="noopener" class="btn btn-gold btn-lg">Mulai Sekarang</a>
+    </div>
+  </section>
+
+  <!-- ============ KONTAK ============ -->
+  <section class="section" id="kontak">
+    <div class="container kontak-grid">
+      <div data-reveal>
+        <p class="section-eyebrow">Kontak</p>
+        <h2 class="section-title">Ceritakan kebutuhanmu, kami balas cepat</h2>
+        <p class="section-desc">
+          Isi form di samping, nanti pesan kamu otomatis kami terima lewat WhatsApp
+          lengkap dengan detail yang kamu tulis.
+        </p>
+        <ul class="contact-info">
+          <li><strong>WhatsApp</strong><span>+62 812-3456-7890</span></li>
+          <li><strong>Email</strong><span>halo@trivera.id</span></li>
+          <li><strong>Jam Layanan</strong><span>Setiap hari, 08.00 – 22.00 WIB</span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-reveal novalidate>
+
+  <div class="form-row">
+    <label for="namaInput">Nama</label>
+    <input
+      type="text"
+      id="namaInput"
+      name="nama"
+      placeholder="Nama lengkap kamu"
+      required
+    >
+    <span class="form-error" data-error="nama"></span>
+  </div>
+
+  <div class="form-row">
+    <label for="layananInput">Layanan yang dibutuhkan</label>
+    <select id="layananInput" name="layanan" required>
+      <option value="" disabled selected>Pilih layanan</option>
+      <option>Pembuatan Website</option>
+      <option>Desain &amp; Creative</option>
+      <option>Konsultasi IT</option>
+      <option>IT Training</option>
+      <option>Academic &amp; IT Support</option>
+      <option>Lainnya</option>
+    </select>
+  </div>
+
+  <div class="form-row">
+    <label for="pesanInput">Ceritakan kebutuhan kamu</label>
+    <textarea
+      id="pesanInput"
+      name="pesan"
+      rows="4"
+      placeholder="Ceritakan kebutuhan atau hal yang ingin kamu konsultasikan..."
+      required
+    ></textarea>
+    <span class="form-error" data-error="pesan"></span>
+  </div>
+
+  <button type="submit" class="btn btn-gold btn-block">
+    Konsultasi via WhatsApp
+  </button>
+
+  <p class="form-note">
+    Setelah dikirim, kamu akan diarahkan ke WhatsApp untuk melanjutkan konsultasi.
+  </p>
+
+</form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="logo-trivera.jpeg" alt="Logo TriVera" class="brand-mark">
+      <div>
+        <span class="brand-name">TriVera</span>
+        <p>IT Consultant, Training Center &amp; Web House.</p>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h5>Navigasi</h5>
+      <a href="#layanan">Layanan</a>
+      <a href="#portofolio">Portofolio</a>
+      <a href="#harga">Harga</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Layanan</h5>
+      <a href="#layanan">Web & Digital Solution</a>
+      <a href="#layanan">Tugas &amp; Skripsi</a>
+      <a href="#layanan">Creative Design</a>
+      <a href="#layanan">IT Consulting</a>
+      <a href="#layanan">IT Training</a>
+      <a href="#layanan">Academic &amp; IT Support</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Hubungi Kami</h5>
+      <a href="https://wa.me/6282114982094" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:halo@trivera.id">halo@trivera.id</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© <span id="year"></span> TriVera. Seluruh hak cipta dilindungi.</p>
+      <p>Dibuat dengan presisi &amp; secangkir kopi.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/6282114982094?text=Halo%20TriVera%2C%20saya%20ingin%20bertanya." target="_blank" rel="noopener" class="wa-float" aria-label="Chat via WhatsApp">
+  <svg viewBox="0 0 24 24" class="ico"><path d="M17.6 6.3A8.9 8.9 0 0 0 12 4a8.9 8.9 0 0 0-7.7 13.4L3 21l3.7-1.2A8.9 8.9 0 0 0 12 21a8.9 8.9 0 0 0 5.6-15.7Zm-5.6 13.1a7.4 7.4 0 0 1-3.8-1l-.3-.2-2.3.8.8-2.2-.2-.3A7.4 7.4 0 1 1 20 12a7.4 7.4 0 0 1-8 7.4Zm4-5.5c-.2-.1-1.3-.6-1.5-.7-.2-.1-.3-.1-.5.1-.1.2-.5.7-.6.8-.1.1-.2.1-.4 0-.2-.1-.9-.3-1.7-1a6.3 6.3 0 0 1-1.2-1.5c-.1-.2 0-.3.1-.4l.3-.4.2-.3v-.3c0-.1-.5-1.2-.7-1.6-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.1 1.6 2.5 3.9 3.5.5.2 1 .4 1.3.5.6.2 1.1.1 1.5.1.5-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1l-.4-.2Z"/></svg>
+</a>
+
+<button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
